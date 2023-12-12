@@ -6,7 +6,7 @@
 /*   By: syan <syan@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 10:45:25 by syan              #+#    #+#             */
-/*   Updated: 2023/12/12 11:31:24 by syan             ###   ########.fr       */
+/*   Updated: 2023/12/12 15:49:10 by syan             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ t_list	*empty_case(t_list *node, t_list *prev)
 
 char	*minishell_expansion(char *token)
 {
-	char *str;
+	char	*str;
 	
 	str = case_that_are_not_expansible(token);
 	if (str != NULL)
@@ -58,7 +58,7 @@ void	expander(void)
 		{
 			node = empty_case(node, prev);
 			free(temp);
-			continue;
+			continue ;
 		}
 		tklist->token = temp;
 		prev = node;

@@ -6,13 +6,11 @@
 /*   By: syan <syan@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/11 15:39:30 by syan              #+#    #+#             */
-/*   Updated: 2023/12/12 10:05:58 by syan             ###   ########.fr       */
+/*   Updated: 2023/12/12 15:47:15 by syan             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/minishell.h"
-
-
 
 int	check_qtt_to_be_incremented(char *line)
 {

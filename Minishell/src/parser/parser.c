@@ -6,7 +6,7 @@
 /*   By: syan <syan@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 11:44:16 by syan              #+#    #+#             */
-/*   Updated: 2023/12/12 14:17:34 by syan             ###   ########.fr       */
+/*   Updated: 2023/12/12 15:43:19 by syan             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	reidentify_some_tokens(t_list *tks)
 			node->next)
 		{
 			next_tokens = (t_tokens *)node->next->content;
-			if (tokens->id_token = HEREDOC)
+			if (tokens->id_token == HEREDOC)
 				next_tokens->id_token = DELIMITER;
 			else if (tokens->id_token == APPEND)
 				next_tokens->id_token = FILE_APPEND;

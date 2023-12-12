@@ -6,7 +6,7 @@
 /*   By: syan <syan@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 12:07:00 by syan              #+#    #+#             */
-/*   Updated: 2023/12/12 13:31:55 by syan             ###   ########.fr       */
+/*   Updated: 2023/12/12 15:42:45 by syan             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,16 @@ int	consecutive_metchars(char *token, char *next_token, int id, int next_id)
 	if (is_metachars(id))
 	{
 		if (is_metachars(next_id) && id != PIPE)
+		{
 			if (id != PIPE)
 				msg_error_invalid_synax(next_token);
 			else
 				msg_error_invalid_synax(token);
 			return (1);
-	}
+		}
 		else if (id == PIPE && next_id == PIPE)
 			return (msg_error_invalid_synax(token), 1);
+	}
 	return (0);
 }
 

@@ -6,7 +6,7 @@
 /*   By: syan <syan@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/11 15:18:30 by syan              #+#    #+#             */
-/*   Updated: 2023/12/12 10:29:47 by syan             ###   ########.fr       */
+/*   Updated: 2023/12/12 15:47:04 by syan             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ int	count_specific_tokens(char *str)
 	i = 0;
 	value = 0;
 	qtt_tokens = 0;
-	while(str[i])
+	while (str[i])
 	{
 		if (str[i] == SQUOTE || str[i] == DQUOTES)
 			qtt_tokens_quotes(value, str, &i, &qtt_tokens);
@@ -97,17 +97,17 @@ int	set_true_quotes(char *line, int *i)
 
 char	*add_marker(char *line)
 {
-	t_bool is_two_quotes;
+	t_bool	is_two_quotes;
 	int		i;
 
 	i = 0;
-	while(i < (int)ft_strlen(line))
+	while (i < (int)ft_strlen(line))
 	{
 		is_two_quotes = FALSE;
 		if (set_true_quotes(line, &i))
 			is_two_quotes = TRUE;
 		if (is_two_quotes == TRUE)
-			line = add_chrs_in_specific_position(line, i , MARKER);
+			line = add_chrs_in_specific_position(line, i, MARKER);
 		i++;
 	}
 	return (line);

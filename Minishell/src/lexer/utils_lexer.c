@@ -6,7 +6,7 @@
 /*   By: syan <syan@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/11 16:06:24 by syan              #+#    #+#             */
-/*   Updated: 2023/12/12 10:03:52 by syan             ###   ########.fr       */
+/*   Updated: 2023/12/12 15:44:10 by syan             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,5 +60,5 @@ int	qtt_tokens_heredoc_or_append(int *i, int *qtt_tokens)
 {
 	*qtt_tokens += 1;
 	*i += 1;
-	return(*qtt_tokens);
+	return (*qtt_tokens);
 }

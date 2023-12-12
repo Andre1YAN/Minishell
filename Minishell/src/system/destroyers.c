@@ -6,7 +6,7 @@
 /*   By: syan <syan@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 11:28:19 by syan              #+#    #+#             */
-/*   Updated: 2023/12/12 14:22:40 by syan             ###   ########.fr       */
+/*   Updated: 2023/12/12 15:41:37 by syan             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	destroy_minishell(void)
 {
-	ft_lstclear(&g_ms, destroy_t_tokens);
+	ft_lstclear(&g_ms.tks, destroy_t_tokens);
 	free(g_ms.prompt_line);
 	free(g_ms.tab_tokens);
 	free(g_ms.tab_id);

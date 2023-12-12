@@ -6,7 +6,7 @@
 /*   By: syan <syan@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/11 14:45:00 by syan              #+#    #+#             */
-/*   Updated: 2023/12/12 14:44:48 by syan             ###   ########.fr       */
+/*   Updated: 2023/12/12 15:31:43 by syan             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ typedef struct s_tokens
 typedef struct s_minishell
 {
 	int			sig;
-	int			tab_id;
+	int			*tab_id;
 	int			len_tokens;
 	int			fd_heredoc;
 	int			exit_status;

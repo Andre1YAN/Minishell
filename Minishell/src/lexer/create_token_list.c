@@ -6,7 +6,7 @@
 /*   By: syan <syan@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 10:30:43 by syan              #+#    #+#             */
-/*   Updated: 2023/12/12 10:35:50 by syan             ###   ########.fr       */
+/*   Updated: 2023/12/12 15:46:01 by syan             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,6 @@ void	create_token_list(char **str, int *id, int len)
 
 	i = -1;
 	while (++i < len)
-		ft_lstadd_back(&g_ms.tks, 
+		ft_lstadd_back(&g_ms.tks,
 			ft_lstnew(create_content(str[i], id[i], i)));
 }

@@ -6,7 +6,7 @@
 /*   By: syan <syan@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/11 14:16:14 by syan              #+#    #+#             */
-/*   Updated: 2023/12/12 14:34:07 by syan             ###   ########.fr       */
+/*   Updated: 2023/12/12 15:41:11 by syan             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	repl(void)
 		{
 			destroy_minishell();
 			rl_redisplay();
-			continue;
+			continue ;
 		}
 	}
 	
