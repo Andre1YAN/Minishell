@@ -12,7 +12,7 @@
 
 #include "../../includes/minishell.h"
 
-int	consecutive_metchars(char *token, char *next_token, int id, int next_id)
+int	consecutive_metachars(char *token, char *next_token, int id, int next_id)
 {
 	if (is_metachars(id))
 	{
