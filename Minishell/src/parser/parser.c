@@ -6,11 +6,11 @@
 /*   By: syan <syan@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 11:44:16 by syan              #+#    #+#             */
-/*   Updated: 2023/12/13 14:45:10 by syan             ###   ########.fr       */
+/*   Updated: 2023/12/13 15:04:44 by syan             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/defines.h"
+#include "../../includes/minishell.h"
 
 void	reidentify_some_tokens(t_list *tks)
 {
