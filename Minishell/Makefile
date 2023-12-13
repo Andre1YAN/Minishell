@@ -6,7 +6,7 @@
 #    By: syan <syan@student.42.fr>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/12 15:09:59 by syan              #+#    #+#              #
-#    Updated: 2023/12/12 15:39:07 by syan             ###   ########.fr        #
+#    Updated: 2023/12/13 14:18:00 by syan             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,7 +45,8 @@ LEXER				=	tokens.c									\
 						utils_lexer.c								\
 
 EXPANDER			=	expander.c									\
-						brace_expansion.c
+						brace_expansion.c							\
+						expander_checks.c
 
 PARSER 				=	parser.c 									\
 						handle_metachars.c							\
