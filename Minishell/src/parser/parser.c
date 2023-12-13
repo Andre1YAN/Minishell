@@ -6,7 +6,7 @@
 /*   By: syan <syan@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 11:44:16 by syan              #+#    #+#             */
-/*   Updated: 2023/12/13 14:04:29 by syan             ###   ########.fr       */
+/*   Updated: 2023/12/13 14:45:10 by syan             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,6 +67,7 @@ int	error_syntaxy_metachars(t_list *tks, int len_tokens)
 		i++;
 		node = node->next;
 	}
+	return (0);
 }
 
 int	parser(void)
