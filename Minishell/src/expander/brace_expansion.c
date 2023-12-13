@@ -6,7 +6,7 @@
 /*   By: syan <syan@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 11:11:06 by syan              #+#    #+#             */
-/*   Updated: 2023/12/13 14:01:51 by syan             ###   ########.fr       */
+/*   Updated: 2023/12/13 15:10:59 by syan             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,7 +77,7 @@ t_bool	is_brace_expansion(char *token, int *i, char **final_str)
 	return (FALSE);
 }
 
-char	*cases_that_are_not_expansibel(char *token)
+char	*cases_that_are_not_expansible(char *token)
 {
 	if (token[0] == SQUOTE)
 		return (ft_strtrim(token, "\'"));

@@ -6,7 +6,7 @@
 /*   By: syan <syan@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 11:44:16 by syan              #+#    #+#             */
-/*   Updated: 2023/12/13 15:04:44 by syan             ###   ########.fr       */
+/*   Updated: 2023/12/13 15:06:18 by syan             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ int	error_syntaxy_metachars(t_list *tks, int len_tokens)
 		tkl = (t_tokens *)node->content;
 		if (!ft_strcmp("|", tkl->token) && i == 0)
 			return (msg_error_invalid_synax(tkl->token), 1);
-		if (is_metachars(tkl->token) && !node->next && tkl->id_token != PIPE)
+		if (is_metachars(tkl->id_token) && !node->next && tkl->id_token != PIPE)
 			return (msg_error_invalid_synax("newline"), 1);
 		if (is_single_metachar(tkl->token, tkl->id_token, len_tokens))
 			return (1);
