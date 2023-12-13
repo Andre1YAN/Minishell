@@ -65,6 +65,7 @@ int	count_specific_tokens(char *str)
 			qtt_tokens += 1;
 		i++;
 	}
+	return (qtt_tokens);
 }
 
 int	set_true_quotes(char *line, int *i)
