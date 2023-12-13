@@ -6,7 +6,7 @@
 #    By: syan <syan@student.42.fr>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/12 15:09:59 by syan              #+#    #+#              #
-#    Updated: 2023/12/13 15:08:06 by syan             ###   ########.fr        #
+#    Updated: 2023/12/13 16:23:39 by syan             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,6 +43,7 @@ LEXER				=	tokens.c									\
 						handle_spaces.c								\
 						create_token_list.c							\
 						utils_lexer.c								\
+						join_tokens.c
 
 EXPANDER			=	expander.c									\
 						brace_expansion.c							\

@@ -6,7 +6,7 @@
 /*   By: syan <syan@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/11 14:19:47 by syan              #+#    #+#             */
-/*   Updated: 2023/12/13 14:07:21 by syan             ###   ########.fr       */
+/*   Updated: 2023/12/13 16:22:39 by syan             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,6 +57,7 @@ void		reverse_replace(char **table_tokens, int len_tab);
 void		create_token_list(char **str, int *id, int len);
 void		get_quotes(int value, char line, int *i, int **qtt_tokens);
 void		reidentify_some_tokens(t_list *tks);
+void		join_tokens(t_list **tks);
 t_bool		check_for_specific_token(char c);
 t_tokens	*create_content(char *tks, int index, int id);
 

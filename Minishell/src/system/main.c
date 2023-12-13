@@ -6,7 +6,7 @@
 /*   By: syan <syan@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/11 14:16:14 by syan              #+#    #+#             */
-/*   Updated: 2023/12/12 15:41:11 by syan             ###   ########.fr       */
+/*   Updated: 2023/12/13 16:30:58 by syan             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,12 @@ void	repl(void)
 			rl_redisplay();
 			continue ;
 		}
+		join_tokens(&g_ms.tks);
+		reidentify_some_tokens(g_ms.tks);
+		//executer();
+		//destroy_minishell();
 	}
-	
+	//ft_lstclear(&g_ms.env, free);
 }
 
 int	main(int argc, char **argv, char **envp)
