@@ -6,7 +6,7 @@
 /*   By: syan <syan@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/11 14:45:00 by syan              #+#    #+#             */
-/*   Updated: 2023/12/12 15:31:43 by syan             ###   ########.fr       */
+/*   Updated: 2023/12/13 11:18:03 by syan             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # define ARROW "> "
 # define PROMPT "MiniSHELL$ "
+# define INDEX_ZERO 0
 
 # define REPLACE_VALUE 3
 # define SPACE ' '

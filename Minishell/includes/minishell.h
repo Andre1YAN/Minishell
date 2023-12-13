@@ -6,7 +6,7 @@
 /*   By: syan <syan@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/11 14:19:47 by syan              #+#    #+#             */
-/*   Updated: 2023/12/12 15:33:43 by syan             ###   ########.fr       */
+/*   Updated: 2023/12/13 14:07:21 by syan             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,15 +72,21 @@ int			error_syntaxy_metachars(t_list *tks, int len_tokens);
 void		qtt_tokens_quotes(int value, char *line, int *i, int *qtt_tokens);
 void		msg_error_invalid_synax(char *token);
 void		handle_signal(void);
+void		signal_break_heredoc(int signal);
 t_bool		is_metachars(int id_tks);
 
 /* -----------------------------------------------------------------------*\
 									expander
 \* -----------------------------------------------------------------------*/
 
+int			check_last_expansion_occurrence(char *token);
 char		*minishell_expansion(char *token);
+char		*is_envar_expansible(char *token, int *i, char **final_str);
 char		*cases_that_are_not_expansible(char *token);
 void		expander(void);
+void		expand_check_next_character(char *token, int *i, char **final_str);
+t_bool		is_brace_expansion(char *token, int *i, char **final_str);
+t_bool		is_envar_between_squote(char *token);
 
 /* -----------------------------------------------------------------------*\
 									builtins
