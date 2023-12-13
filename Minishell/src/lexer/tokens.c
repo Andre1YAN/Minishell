@@ -34,7 +34,7 @@ int	*identify_tokens(char **str, int len_tab)
 		else if (aux[0] == RDRCT_OU && ft_strlen(aux) == 2)
 			id_tks[i] = APPEND;
 		else
-			id_tks = COMMAND;
+			id_tks[i] = COMMAND;
 		i++;
 	}
 	return (id_tks);
