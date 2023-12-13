@@ -72,7 +72,6 @@ int			error_syntaxy_metachars(t_list *tks, int len_tokens);
 void		qtt_tokens_quotes(int value, char *line, int *i, int *qtt_tokens);
 void		msg_error_invalid_synax(char *token);
 void		handle_signal(void);
-void		signal_break_heredoc(int signal);
 t_bool		is_metachars(int id_tks);
 
 /* -----------------------------------------------------------------------*\
