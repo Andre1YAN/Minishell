@@ -27,6 +27,13 @@ int	check_qtt_to_be_incremented(char *line)
 			i++;
 		i++;
 	}
+	else if (line[i] == RDRCT_IN && line[i + 1] == RDRCT_IN)
+		i += 2;
+	else if (line[i] == RDRCT_OU && line[i + 1] == RDRCT_OU)
+		i += 2;
+	else
+		i++;
+	return (i);
 }
 
 char	*add_spaces_specific_tokens(char *line, int count)
@@ -38,7 +45,7 @@ char	*add_spaces_specific_tokens(char *line, int count)
 
 	i = 0;
 	j = 0;
-	str = ft_malloc(1, ft_strlen(line) + count * 2 + 1);
+	str = ft_calloc(1, ft_strlen(line) + count * 2 + 1);
 	while (i < ft_strlen(line))
 	{
 		if (check_for_specific_token(line[i]) == TRUE)
