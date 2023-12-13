@@ -94,6 +94,7 @@ int	set_true_quotes(char *line, int *i)
 			return (1);
 		}
 	}
+	return (0);
 }
 
 char	*add_marker(char *line)
